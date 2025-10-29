@@ -9,15 +9,15 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ quote, author, rating }: TestimonialCardProps) => {
   return (
-    <Card className="bg-gradient-to-br from-card to-muted border-0 shadow-md">
+    <Card className="bg-card border-2 border-primary/20 shadow-inner">
       <CardContent className="pt-6">
         <Quote className="w-10 h-10 text-secondary mb-4" />
-        <p className="text-foreground mb-4 italic">"{quote}"</p>
-        <div className="flex items-center justify-between">
-          <p className="font-semibold text-primary">— {author}</p>
+        <p className="text-foreground mb-4 italic font-lato leading-relaxed">"{quote}"</p>
+        <div className="flex items-center justify-between pt-4 border-t border-border">
+          <p className="font-semibold text-primary font-montserrat tracking-wide">— {author}</p>
           <div className="flex">
             {[...Array(rating)].map((_, i) => (
-              <span key={i} className="text-secondary">★</span>
+              <span key={i} className="text-secondary text-lg">★</span>
             ))}
           </div>
         </div>

@@ -16,19 +16,19 @@ const KineCard = ({ name, specialty, bio, photoUrl }: KineCardProps) => {
     .join("");
 
   return (
-    <Card className="hover:shadow-lg transition-all duration-300">
+    <Card className="hover:shadow-lg transition-all duration-300 border-2 border-border">
       <CardHeader className="text-center">
-        <Avatar className="w-32 h-32 mx-auto mb-4 ring-4 ring-secondary ring-offset-4">
+        <Avatar className="w-32 h-32 mx-auto mb-4 ring-2 ring-secondary ring-offset-4 rounded-none">
           <AvatarImage src={photoUrl} alt={name} />
-          <AvatarFallback className="text-2xl bg-gradient-primary text-primary-foreground">
+          <AvatarFallback className="text-2xl bg-primary text-primary-foreground rounded-none font-montserrat">
             {initials}
           </AvatarFallback>
         </Avatar>
-        <h3 className="text-2xl font-bold text-primary">{name}</h3>
-        <Badge className="mt-2 bg-secondary text-secondary-foreground">{specialty}</Badge>
+        <h3 className="text-2xl font-bold text-primary font-montserrat tracking-wide">{name}</h3>
+        <Badge className="mt-2 bg-secondary text-secondary-foreground rounded-none px-4 py-1 font-montserrat tracking-wider">{specialty}</Badge>
       </CardHeader>
       <CardContent>
-        <p className="text-muted-foreground text-center">{bio}</p>
+        <p className="text-muted-foreground text-center font-lato">{bio}</p>
       </CardContent>
     </Card>
   );

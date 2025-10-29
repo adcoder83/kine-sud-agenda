@@ -9,55 +9,59 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 98%;
-    --foreground: 210 80% 15%;
+    --foreground: 218 70% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 80% 15%;
+    --card-foreground: 218 70% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 80% 15%;
+    --popover-foreground: 218 70% 12%;
 
-    /* Bleu marine professionnel */
-    --primary: 210 100% 20%;
+    /* Bleu Céruléen technologique */
+    --primary: 218 65% 48%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 210 95% 35%;
-    --primary-glow: 210 95% 45%;
+    --primary-light: 218 60% 58%;
+    --primary-glow: 218 55% 68%;
+    --primary-dark: 218 70% 38%;
 
-    /* Vert clair vitalité */
-    --secondary: 84 100% 59%;
-    --secondary-foreground: 210 80% 15%;
-    --secondary-light: 84 100% 70%;
-    --secondary-glow: 84 100% 80%;
+    /* Vert Menthe accent */
+    --secondary: 156 70% 65%;
+    --secondary-foreground: 218 70% 12%;
+    --secondary-light: 156 65% 75%;
+    --secondary-glow: 156 60% 85%;
 
-    --muted: 210 30% 96%;
-    --muted-foreground: 210 20% 50%;
+    --muted: 218 15% 96%;
+    --muted-foreground: 218 15% 45%;
 
-    --accent: 84 100% 59%;
-    --accent-foreground: 210 80% 15%;
+    --accent: 156 70% 65%;
+    --accent-foreground: 218 70% 12%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 210 100% 20%;
+    --border: 218 15% 88%;
+    --input: 218 15% 88%;
+    --ring: 218 65% 48%;
 
-    --radius: 0.375rem;
+    --radius: 0rem;
+    --radius-sm: 0.25rem;
+    --radius-btn: 0.5rem;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 100% 20%), hsl(210 95% 35%));
-    --gradient-secondary: linear-gradient(135deg, hsl(84 100% 59%), hsl(84 100% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 100% 20% / 0.95), hsl(210 95% 35% / 0.9));
+    /* Gradients futuristes */
+    --gradient-primary: linear-gradient(135deg, hsl(218 70% 38%), hsl(218 65% 48%));
+    --gradient-secondary: linear-gradient(135deg, hsl(156 70% 65%), hsl(156 65% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(218 70% 38% / 0.95), hsl(218 65% 48% / 0.9));
     
-    /* Shadows */
-    --shadow-sm: 0 2px 8px hsl(210 100% 20% / 0.08);
-    --shadow-md: 0 4px 16px hsl(210 100% 20% / 0.12);
-    --shadow-lg: 0 8px 32px hsl(210 100% 20% / 0.16);
-    --shadow-glow: 0 0 40px hsl(84 100% 59% / 0.3);
+    /* Ombres nettes et minimalistes */
+    --shadow-sm: 0 1px 2px hsl(218 65% 48% / 0.12);
+    --shadow-md: 0 2px 4px hsl(218 65% 48% / 0.15);
+    --shadow-lg: 0 3px 6px hsl(218 65% 48% / 0.18);
+    --shadow-glow: 0 0 20px hsl(156 70% 65% / 0.4);
+    --shadow-inner: inset 0 1px 3px hsl(218 65% 48% / 0.1);
 
     /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
@@ -98,5 +102,19 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+  }
+
+  .nav-text, .menu-text {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 500;
   }
 }

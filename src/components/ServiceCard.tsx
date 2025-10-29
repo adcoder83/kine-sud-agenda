@@ -10,24 +10,25 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ icon: Icon, title, description, image }: ServiceCardProps) => {
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden border-2">
+    <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden border-2 border-border">
       {image && (
-        <div className="h-48 overflow-hidden">
+        <div className="h-48 overflow-hidden relative">
           <img 
             src={image} 
             alt={title}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
         </div>
       )}
       <CardHeader>
-        <div className="w-12 h-12 bg-gradient-secondary rounded-lg flex items-center justify-center mb-3 group-hover:shadow-glow transition-all">
-          <Icon className="w-6 h-6 text-secondary-foreground" />
+        <div className="w-12 h-12 bg-primary rounded-none flex items-center justify-center mb-3 group-hover:shadow-glow transition-all border-b-2 border-secondary">
+          <Icon className="w-6 h-6 text-primary-foreground" />
         </div>
-        <CardTitle className="text-xl">{title}</CardTitle>
+        <CardTitle className="text-xl font-montserrat tracking-wide">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <CardDescription className="text-base">{description}</CardDescription>
+        <CardDescription className="text-base font-lato">{description}</CardDescription>
       </CardContent>
     </Card>
   );
