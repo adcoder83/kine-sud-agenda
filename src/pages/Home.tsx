@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
-import { Activity, Heart, Baby, Calendar, MapPin, Clock } from "lucide-react";
+import { Activity, Bone, BookOpen, Network, Snowflake, Wind, Calendar, MapPin, Clock } from "lucide-react";
 import heroImage from "@/assets/hero-kine.jpg";
 import sportsKineImage from "@/assets/sports-kine.jpg";
 import postOpKineImage from "@/assets/post-op-kine.jpg";
@@ -12,20 +12,38 @@ const Home = () => {
   const services = [
     {
       icon: Activity,
-      title: "Kinésithérapie du Sport",
-      description: "Réathlétisation et prévention des blessures pour les sportifs de tous niveaux.",
+      title: "Kiné du sport",
+      description: "Prise en charge des blessures sportives et réathlétisation pour un retour optimal à la performance.",
       image: sportsKineImage,
     },
     {
-      icon: Heart,
-      title: "Rééducation Post-Opératoire",
-      description: "Suivi personnalisé après chirurgie orthopédique pour une récupération optimale.",
+      icon: Bone,
+      title: "Ostéopathie",
+      description: "Approche globale et manuelle pour rétablir l'équilibre du corps et soulager les tensions.",
       image: postOpKineImage,
     },
     {
-      icon: Baby,
-      title: "Kinésithérapie Respiratoire",
-      description: "Techniques spécialisées pour enfants et adultes, soins doux et efficaces.",
+      icon: BookOpen,
+      title: "École du dos",
+      description: "Programme éducatif pour prévenir et gérer les douleurs dorsales au quotidien.",
+      image: respiratoryKineImage,
+    },
+    {
+      icon: Network,
+      title: "Chaîne musculaire de Busquet",
+      description: "Techniques avancées de rééquilibrage postural et de libération des tensions myofasciales.",
+      image: sportsKineImage,
+    },
+    {
+      icon: Snowflake,
+      title: "Cryothérapie",
+      description: "Thérapie par le froid pour accélérer la récupération et réduire les inflammations.",
+      image: postOpKineImage,
+    },
+    {
+      icon: Wind,
+      title: "Pressothérapie",
+      description: "Drainage lymphatique mécanique pour améliorer la circulation et favoriser la récupération.",
       image: respiratoryKineImage,
     },
   ];
@@ -62,7 +80,7 @@ const Home = () => {
         </div>
         <div className="relative z-10 text-center text-primary-foreground px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-            Kinésithérapeute Sportif et Rééducation à Aix-en-Provence
+            Kinésithérapeute Sportif et Rééducation à La Seyne-sur-Mer
           </h1>
           <p className="text-xl md:text-2xl mb-8 drop-shadow-md">
             Votre bien-être en mouvement avec des soins personnalisés et une approche globale
@@ -84,7 +102,7 @@ const Home = () => {
             Des soins adaptés à vos besoins avec une approche personnalisée
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
             <ServiceCard key={service.title} {...service} />
           ))}
@@ -123,7 +141,7 @@ const Home = () => {
                 <MapPin className="w-6 h-6 text-secondary mt-1" />
                 <div>
                   <p className="font-semibold">Adresse</p>
-                  <p className="text-muted-foreground">12 Avenue Victor Hugo<br />13100 Aix-en-Provence</p>
+                  <p className="text-muted-foreground">Le catamaran, 24 Av. Alex Peire bat c<br />83500 La Seyne-sur-Mer</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -142,7 +160,7 @@ const Home = () => {
           </div>
           <div className="h-96 rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.6738705755!2d5.447427!3d43.529742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c98dae8f5a0f6b%3A0x40819a5fd970220!2sAix-en-Provence!5e0!3m2!1sfr!2sfr!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.845!2d5.8798!3d43.1034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c91b35f7b6e8f1%3A0x9c8c4e6e5e5e5e5e!2s24%20Avenue%20Alex%20Peire%2C%2083500%20La%20Seyne-sur-Mer!5e0!3m2!1sfr!2sfr!4v1234567890"
               width="100%"
               height="100%"
               style={{ border: 0 }}

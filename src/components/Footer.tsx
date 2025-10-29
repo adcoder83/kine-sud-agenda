@@ -12,11 +12,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                <span>12 Avenue Victor Hugo<br />13100 Aix-en-Provence</span>
+                <span>Le catamaran, 24 Av. Alex Peire bat c<br />83500 La Seyne-sur-Mer</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5" />
-                <span>04 42 00 00 00</span>
+                <span>04 94 06 25 47</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5" />

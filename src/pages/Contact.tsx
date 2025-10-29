@@ -45,10 +45,10 @@ const Contact = () => {
               <p className="text-muted-foreground mb-2">
                 <strong>Cabinet Kiné Bien-Être Sud</strong>
               </p>
-              <p className="text-muted-foreground">12 Avenue Victor Hugo</p>
-              <p className="text-muted-foreground">13100 Aix-en-Provence</p>
+              <p className="text-muted-foreground">Le catamaran, 24 Av. Alex Peire bat c</p>
+              <p className="text-muted-foreground">83500 La Seyne-sur-Mer</p>
               <p className="text-sm text-muted-foreground mt-2">
-                Parking gratuit disponible à proximité
+                Parking disponible à proximité
               </p>
             </CardContent>
           </Card>
@@ -84,7 +84,7 @@ const Contact = () => {
             <CardContent className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="w-5 h-5 text-primary" />
-                <span className="text-muted-foreground">04 42 00 00 00</span>
+                <span className="text-muted-foreground">04 94 06 25 47</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 text-primary" />
@@ -211,7 +211,7 @@ const Contact = () => {
         <h2 className="text-3xl font-bold text-primary text-center mb-8">Plan d'accès</h2>
         <div className="h-96 rounded-lg overflow-hidden shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.6738705755!2d5.447427!3d43.529742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c98dae8f5a0f6b%3A0x40819a5fd970220!2sAix-en-Provence!5e0!3m2!1sfr!2sfr!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.845!2d5.8798!3d43.1034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c91b35f7b6e8f1%3A0x9c8c4e6e5e5e5e5e!2s24%20Avenue%20Alex%20Peire%2C%2083500%20La%20Seyne-sur-Mer!5e0!3m2!1sfr!2sfr!4v1234567890"
             width="100%"
             height="100%"
             style={{ border: 0 }}
